@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>tocaprointerior</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100%;
+        }
+
+        .topo{
+            width: 100%;
+            height: 40px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .sec-01{
+            width: 100%;
+            height: 300px;
+            background-image: url("assets/images/section0108.jpg");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-y: -220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .sec-01 header{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec-01 header div{
+            width: 100%;
+            padding: 10px;
+            color: #222;
+            
+        }
+
+        .sec-01 header img{
+            width: 200px;
+            height: 200px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+        }
+
+        .sec-01 header ul{
+            margin-left: 25px;
+        }
+
+        .header{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header span{
+            padding: 7px 20px;
+            font-weight: bold;
+        }
+
+        .sec-01 header span{
+            font-size: 0.6em;
+            font-weight: bold;
+        }
+
+        .sec-02{
+            width: 100%;
+            height: 700px;
+            
+        }
+
+    
+
+        .sec2{
+            display: none;
+        }
+
+        .sec-02 header{
+            width: 100%;
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p{
+            font-style: italic;
+        }
+
+
+        /* imagens table */
+
+        .col1{
+            width: calc(33.3% - 10px);
+            height: 300px;
+            overflow: hidden;
+            margin: 5px;
+        }
+
+        .col2{
+            width: calc(50% - 10px);
+            height: 300px;
+            overflow: hidden;
+            margin: 5px;
+        }
+
+        .col75{
+            width: calc(66.6% - 10px);
+            height: 300px;
+            overflow: hidden;
+            margin: 5px;
+        }
+
+        .col3{
+            width: calc(100% - 5px);
+            height: 300px;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .mat{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            opacity: 0.3;
+            transition: all 1s;
+        }
+
+        .bor{
+            position: relative;
+            border-radius: 3px;
+
+        }
+
+        .mat img{
+            position: absolute;
+            z-index: 60;
+            /* top: -200px; */
+            width: 100%;
+            height: 100%;
+            
+
+        }
+
+        .mat img:hover{
+            transform: scale(1.1);
+            transition: all 1s;
+            cursor: pointer;
+        }
+
+        .bor:hover{
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: all 1s;
+        }
+
+        .mat article header{
+            position: absolute;
+            z-index: 70;
+        }
+
+        .animation{
+            transition: all 1s;
+        }
+
+        .bxb{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            display: none;
+            cursor: pointer;
+        }
+
+        .txt{
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="topo">
+            #tocaprointerior
+        </div>
+        <!-- <header class="header">
+            <span>#CIDADES</span>
+            <span>#FAZENDAS</span>
+            <span>#NATUREZA</span>
+        </header> -->
+
+        <section class="sec-01">
+            <header>
+
+                <img src="assets/images/p1.jpeg" alt="">
+                
+                <div>
+                    <h1>Ana Paula Borges Freire</h1>
+                    <p>
+                        Este site é dedicado a <strong>Ana Paula Borges Freire</strong> idealizadora do mesmo, seu desejo era mostrar as maravilhas
+                        do interior do estado de São Paulo, mostrando que não é preciso viajar longas distâncias para se divertir.
+                    </p>
+                    <p>
+                        Ela uniu seu talento jornalístico a sua nova paixão que era o turismo, isso resultou em um blog chamado de <strong>#tocaprointerior</strong>
+                        que saiu do ar logo após sua partida. 
+                    </p>
+                    <span>03/08/2021</span>
+                </div>
+
+            </header>
+        </section>
+
+        <section class="sec-02" >
+
+            <header>
+                <h1>#TOCAPROINTERIOR</h1>
+            </header>
+
+            <div class="mat" id="mat">
+
+                <article data-title='Jacarezinho - Ibitinga' class="col75 bor">
+                    <header class="h">
+                        <h2></h2>
+                        <h3></h3>
+                    </header>
+                    <img src="assets/images/photos/pexels-flo-maderebner-238622.jpg" alt="">
+                </article>
+
+                <article data-title='Brotas' class="col1 bor">
+                    <header>
+                        <h2></h2>
+                        <h3></h3>
+                    </header>
+                    <img src="assets/images/photos/pexels-pixabay-302549.jpg" alt="">
+                </article>
+
+                <article data-title='Fazenda Voltinha - Ibitinga' class="col1 bor">
+                    <header>
+                        <h2></h2>
+                        <h3></h3>
+                    </header>
+                    <img src="assets/images/photos/pexels-nina-uhlíková-725255.jpg" alt="">
+                </article>
+
+                <article data-title='Dois Córregos' class="col1 bor">
+                    <header>
+                        <h2></h2>
+                        <h3></h3>
+                    </header>
+                    <img src="assets/images/photos/pexels-te-lensfix-1371360.jpg" alt="">
+                </article>
+
+                <article data-title='Fazenda - Pontal' class="col1 bor">
+                    <header>
+                        <h2></h2>
+                        <h3></h3>
+                    </header>
+                    <img src="assets/images/photos/pexels-haley-black-2087391.jpg" alt="">
+                </article>
+
+                <article data-title='Cachoeira - Bauru' class="col2 bor">
+                    <header>
+                        <h2></h2>
+                        <h3></h3>
+                    </header>
+                    <img src="assets/images/photos/pexels-te-lensfix-1371360.jpg" alt="">
+                </article>
+
+                <article data-title='Canoa em Itapeva' class="col2 bor">
+                    <header>
+                        <h2></h2>
+                        <h3></h3>
+                    </header>
+                    <img src="assets/images/photos/pexels-pixabay-460376.jpg" alt="">
+                </article>
+
+            </div>
+
+            
+
+
+
+
+            <div class="sec2" id="sec2">
+                <h3>Onde atuou como reporter e produtora:</h3>
+                <ul>
+                    <li>Record Tv.</li>
+                    <li>Tv Tem.</li>
+                    <li>JCNET.</li>
+                    <li>Jornal da cidade de Bauru.</li>
+                    <li>Portal G1.</li>
+                </ul>
+
+            </div>
+            
+        </section>
+
+
+    </div>
+    
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script>
+
+    window.addEventListener("scroll", function(e){
+        
+        let ee = window.scrollY;
+
+        if(ee > 50){
+            const el = document.getElementById("mat");
+            el.style.opacity = 1;
+        }else{
+            const el = document.getElementById("mat");
+            el.style.opacity = 0.3;
+        }
+
+        console.log(ee);
+    });
+
+
+    $(".bor").on("mousemove", function(e){
+        let el = e.target.parentNode;
+
+        const data = this.dataset.title;
+
+        if(!el.querySelector(".bxb")){
+            const bxb = document.createElement("div");
+            bxb.setAttribute("class", "bxb");
+            el.appendChild(bxb);
+            $(".bxb").fadeIn(function(){
+
+                const txt = document.createElement("div");
+                txt.setAttribute("class", "txt");
+                txt.innerHTML = data;  
+                this.appendChild(txt);
+
+
+            });
+
+
+        }
+
+
+    
+    });
+
+    $(".bor").on("mouseleave", function(e){
+        let el = e.target.parentNode;
+
+        if(el.querySelector(".bxb")){
+            $(".bxb").fadeOut(function(){
+                this.remove();
+            });
+        }
+    
+    });
+
+
+
+
+
+</script>
+
+
+</html>
+
+
+<!-- 2 Tema, jornalismo e turismo -->
