@@ -53,7 +53,7 @@
             align-items: center;
         }
 
-        .sec-01 header div{
+        .sec-01 header .desc{
             width: 100%;
             padding: 10px;
             color: #222;
@@ -70,11 +70,22 @@
             
         }
 
+        .sec-01 header .bx-img{
+            width: 240px;
+            height: 200px;
+            
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            ; */
+            
+            
+        }
+
         .sec-01 header img{
             width: 200px;
             height: 200px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 3px;
+            border-radius: 3px
+            
         }
 
         .sec-01 header ul{
@@ -117,6 +128,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            
         }
 
         p{
@@ -219,6 +231,41 @@
             justify-content: center;
         }
 
+        @media(max-width:400px){
+
+        .bor{
+            height: 100px;
+        }
+
+        .bxb{
+            padding: 5px;
+        }
+
+        .txt{
+            font-size: 0.5em;
+        }
+
+        .desc{
+            font-size: 10px;
+        }
+
+        .sec-02 header{
+          
+            font-size: 0.6em;
+        }
+
+        .sec-01 header img{
+            width: 150px;
+            height: 150px;
+            
+        }
+
+
+
+
+
+        }
+
     </style>
 </head>
 
@@ -237,10 +284,10 @@
 
         <section class="sec-01">
             <header>
-
+ 
                 <img src="assets/images/p1.jpeg" alt="">
-                
-                <div>
+               
+                <div class="desc">
                     <h1>Ana Paula Borges Freire</h1>
                     <p>
                         Este site é dedicado a <strong>Ana Paula Borges Freire</strong> idealizadora do mesmo, seu desejo era mostrar as maravilhas
